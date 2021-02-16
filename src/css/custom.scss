@@ -1,0 +1,18 @@
+$primary: #4D0011; //original
+$secondary: #4B443C; //original
+$light: #E4E5E8; //original
+$dark: #53565A; //original
+// $light: #fff1d5;
+// $dark: #ffd59b;
+
+
+.CPic {
+    object-fit: cover;
+}
+
+#Nutshell {
+    font-size: .95rem;
+}
+
+// Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap";
