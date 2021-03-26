@@ -3,13 +3,18 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { NavDropdown,
+import { 
+  NavDropdown,
   Spinner, } from 'react-bootstrap';
 import { 
   KNavbar,
   KNavLink,
   KNavRoute } from './components/navbar/KNavbar';
 
+import {
+  Home,
+  Admin,
+} from './pages/pages.js';
 
 function App() {
   return (
@@ -19,6 +24,10 @@ function App() {
         <KNavLink url={"/blog"} name={'Blog'} key={'blog'}/>
         <KNavLink url={"/contact"} name={'Contact'} key={'contact'}/>
       </KNavbar>
+      <Switch>
+        <Route exact path="/"> <Home /> </Route>
+        <Route path='/admin'><Admin /></Route>
+      </Switch>
     </Router>
   );
 }

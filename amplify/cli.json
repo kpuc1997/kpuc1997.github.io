@@ -5,7 +5,8 @@
       "validatetypenamereservedwords": true,
       "useexperimentalpipelinedtransformer": false,
       "enableiterativegsiupdates": false,
-      "secondarykeyasgsi": true
+      "secondarykeyasgsi": true,
+      "skipoverridemutationinputtypes": true
     },
     "frontend-ios": {
       "enablexcodeintegration": true
@@ -14,7 +15,11 @@
       "enablecaseinsensitivity": true
     },
     "codegen": {
-      "useappsyncmodelgenplugin": true
+      "useappsyncmodelgenplugin": true,
+      "usedocsgeneratorplugin": true,
+      "usetypesgeneratorplugin": true,
+      "cleangeneratedmodelsdirectory": true,
+      "retaincasestyle": true
     },
     "appsync": {
       "generategraphqlpermissions": true

@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "personalsite275940bd": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
