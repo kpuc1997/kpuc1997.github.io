@@ -1,0 +1,14 @@
+type PageText @model
+  @auth (
+    rules: [
+      # Authenticated users/admins can CRUD
+      { allow: private},
+
+      # Unauthenticated users can read
+      { allow: public, operations: [ read ]},
+    ]
+  ) {
+  id: ID!
+  name: String!
+  text: String
+}
